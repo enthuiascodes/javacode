@@ -1,0 +1,65 @@
+// TO CREATE DETAILS OF STUDENTS HAVING ATTRIBUTES NAME,ROLLNUMBER,MARKS,GRADE USING CLASS AND OBJECTS 
+class student{
+    String Name;
+    int Rollnumber;
+    float Marks;
+    char grade;
+
+    void displaystudentdetails()
+    {
+        System.out.println("NAME"+Name);
+        System.out.println("RollNUMBER"+Rollnumber);
+        System.out.println("MARKS"+Marks);
+        System.out.println("GRADE"+grade);
+
+        System.out.println();
+
+    }
+
+   
+
+
+}
+
+public class main{
+    public static void main(String[] args){
+        student studentA = new student();
+        studentA.Name="ayush";
+        studentA.Rollnumber=1;
+        studentA.Marks=100;
+        studentA.grade='a';
+
+        student studentB = new student();
+        studentB.Name="ayush";
+        studentB.Rollnumber=1;
+        studentB.Marks=100;
+        studentB.grade='a';
+
+        student studentX = new student();
+        studentX.Name="ayush";
+        studentX.Rollnumber=1;
+        studentX.Marks=100;
+        studentX.grade='a';
+
+        student studentY = new student();
+        studentY.Name="ayush";
+        studentY.Rollnumber=1;
+        studentY.Marks=100;
+        studentY.grade='a';
+
+     studentA.displaystudentdetails();
+     studentB.displaystudentdetails();
+    studentX.displaystudentdetails();
+    studentY.displaystudentdetails();
+     
+     
+     
+
+     
+
+
+      
+
+
+    }
+}
