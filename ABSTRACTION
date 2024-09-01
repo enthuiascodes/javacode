@@ -1,0 +1,43 @@
+// Abstract Class
+abstract class Student {
+    // Abstract method (does not have a body)
+    abstract void study();
+
+    // Regular method
+    void showDetails(String name, int age) {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+// Subclass (inherited from Student)
+class CollegeStudent extends Student {
+    // Providing implementation of the abstract method
+    void study() {
+        System.out.println("College student studies a variety of subjects.");
+    }
+}
+
+// Another Subclass (inherited from Student)
+class SchoolStudent extends Student {
+    // Providing implementation of the abstract method
+    void study() {
+        System.out.println("School student studies basic subjects.");
+    }
+}
+
+public class abstraction {
+    public static void main(String[] args) {
+        // Creating objects of the subclasses
+        Student student1 = new CollegeStudent();
+        Student student2 = new SchoolStudent();
+
+        // Calling the abstract method study
+        student1.study(); // Output: College student studies a variety of subjects.
+        student2.study(); // Output: School student studies basic subjects.
+
+        // Calling the regular method showDetails
+        student1.showDetails("Alice", 20);
+        student2.showDetails("Bob", 16);
+    }
+}
