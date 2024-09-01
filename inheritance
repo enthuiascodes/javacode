@@ -1,0 +1,20 @@
+//CODE TO EXPALIN INHERITANCE BY USING TWO CLASS 
+class A{
+    void first(){
+        System.out.println("this is first class");
+    }
+}
+//EXTENDS THE CLASS B TO CLASS A 
+class B extends  A{
+    void second(){
+        System.out.println("this is second class");
+    }
+}
+//
+public class inheritance{
+    public static void main(String[] args){
+        B access = new B();
+        access.first();//ACCESSING THE THE MEATHODS OF CLASS A WITH THE CLASS B 
+        access.second();
+    }
+}
