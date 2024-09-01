@@ -1,0 +1,55 @@
+//ENCAPSULATION CODE
+//THE CODE IS TO DEMONSTSTARTE HOW ENCAPSUSULATION WORKS BY THE USE OF GETTR AND SETTER(WHICH IS USED TO GET AND SET THE VALUES)
+//AND THEN CREATE AN OBJECT AN SPECIFY ALL THE ATTRIBUTES IN IT
+class student{
+    private String name;
+    private int age;
+    private int roll_number;
+
+    public String getname(){
+          return name;
+
+    }
+
+    public int getage(){
+        return age;
+    }
+
+    public int   getroll_number(){
+        return roll_number;
+    }
+
+public void setname(String name)
+{
+    this.name=name;
+}
+public void setage(String name){
+    this.name=name;
+}
+
+public void setage(int age)
+{
+    this.age=age;
+}
+
+public void setrollnumber(int roll_number){
+
+this.roll_number=roll_number;
+
+}
+}
+
+public class encapsulation{
+    public static void main(String[] args){
+       student obj=new student();
+       obj.setname("ayush");
+       obj.setage(19);
+      // obj.setroll_number(1);}
+}
+
+
+       System.out.println(obj.getname());
+       System.out.println(obj.getage());
+       System.out.println(obj.getroll_number());
+    }
+}
