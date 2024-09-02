@@ -1,0 +1,40 @@
+// This code explains the concept of method overriding
+// Method overriding allows different classes to have the same method name with different implementations.
+
+class Bank {
+    public void rateOfInterest() {
+        System.out.println("ROI 5%");
+    }
+}
+
+class SBI extends Bank {
+    @Override
+    public void rateOfInterest() {
+        System.out.println("ROI 8%");
+    }
+}
+
+class IDBI extends Bank {
+    @Override
+    public void rateOfInterest() {
+        System.out.println("ROI 10%");
+    }
+}
+
+class meathodoverriding {
+    public static void main(String[] args) {
+        Bank bankObj = new Bank();
+        SBI sbiObj = new SBI();
+        IDBI idbiObj = new IDBI();
+
+        bankObj.rateOfInterest();  // Output: ROI 5%
+        sbiObj.rateOfInterest();   // Output: ROI 8%
+        idbiObj.rateOfInterest();  // Output: ROI 10%
+    }
+
+
+
+
+
+
+}
