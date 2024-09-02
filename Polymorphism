@@ -1,0 +1,26 @@
+//POLYMORPHISM
+//ONE IN MANY FORM
+// SHOWS BEHAVIOUR ACCORDING TO THE SITUATION
+//CODE
+class Overloading{
+     void sum(int a, int b){
+        System.out.println(a+b);
+     }
+
+void sum(int a , int b, int c){
+    System.out.println(a+b+c);
+}
+
+void sum(String a, String b){
+    System.out.println(a+b);
+}
+}
+
+class Main{
+    public static void main(String args[]){
+        Overloading obj = new Overloading();
+        obj.sum(5,7);
+        obj.sum(5,7,9);
+        obj.sum("a","l");
+    }
+}
